@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_title"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            />
+        <Spinner
+            android:id="@+id/typeDropdown"
+            android:background="@drawable/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/color"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            />
+        <Spinner
+            android:id="@+id/colorDropdown"
+            android:background="@drawable/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/size"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            />
+        <Spinner
+            android:id="@+id/sizeDropdown"
+            android:background="@drawable/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/viewButton"
+            android:background="@drawable/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/view"
+            android:textColor="@android:color/white"
+            android:onClick="viewChosen"
+            />
+
+        <Button
+            android:id="@+id/loadButton"
+            android:background="@drawable/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:text="@string/load_customization"
+            android:textColor="@android:color/white"
+            android:onClick="loadCustomization"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

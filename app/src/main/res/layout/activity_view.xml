@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clothes_preview"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/blue_shirt"
+            android:contentDescription="@string/none"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/typeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="20dp"
+            />
+
+        <TextView
+            android:id="@+id/colorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            />
+
+        <TextView
+            android:id="@+id/sizeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/viewButton"
+            android:background="@drawable/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:text="@string/save_customization"
+            android:textColor="@android:color/white"
+            android:onClick="saveCustomization"
+            />
+    </LinearLayout>
+
+</LinearLayout>
